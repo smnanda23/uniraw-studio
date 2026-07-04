@@ -324,27 +324,6 @@ const INTEGRATIONS = [
   ["Js", "JS client"],
 ];
 
-const QUOTES = [
-  {
-    q: "We archived eleven years of studio RAW into a single NAS. The compare slider is what sold the team — you can see there's nothing lost.",
-    n: "Mira Solano",
-    r: "Head of Post, NorthLight Studio",
-    c: "#6366f1",
-  },
-  {
-    q: "The local VLM annotation replaced a labeling contract we were paying five figures for. Same quality, zero marginal cost, runs overnight.",
-    n: "Dev Batra",
-    r: "ML Lead, Kestrel Vision",
-    c: "#22d3ee",
-  },
-  {
-    q: "It feels like a pro NLE, not a science project. Our colorists open TrueColor previews straight from the archive and just work.",
-    n: "Anaïs Fournier",
-    r: "Colorist, Maison Cadre",
-    c: "#a78bfa",
-  },
-];
-
 const FAQS = [
   {
     q: "Is .uniraw conversion lossless?",
@@ -752,36 +731,7 @@ export default function LandingPage({ onLaunch }) {
         </div>
       </section>
 
-      {/* ================= 12 · TESTIMONIALS ================= */}
-      <section className="lp-section lp-center">
-        <div className="lp-wrap">
-          <div className="lp-reveal">
-            <span className="lp-kicker">Loved by pros</span>
-            <h2 className="lp-h2">Don't take our word for it</h2>
-          </div>
-          <div className="lp-quotes">
-            {QUOTES.map((q) => (
-              <figure className="lp-quote lp-reveal" key={q.n} style={{ margin: 0 }}>
-                <p>{q.q}</p>
-                <figcaption className="lp-quote-who">
-                  <span className="lp-avatar" style={{ background: q.c }}>
-                    {q.n
-                      .split(" ")
-                      .map((w) => w[0])
-                      .join("")}
-                  </span>
-                  <span>
-                    <b>{q.n}</b>
-                    <span>{q.r}</span>
-                  </span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ================= 13 · FAQ ================= */}
+      {/* ================= 12 · FAQ ================= */}
       <section className="lp-section lp-center" id="faq">
         <div className="lp-wrap">
           <div className="lp-reveal">
